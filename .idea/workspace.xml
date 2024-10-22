@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="603983c1-5bfe-4784-8097-0eb2b3008db1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/XAY_DUNG_LOP_MTHCN/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XAY_DUNG_LOP_MTHCN/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NHIET_DO/ND.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NHIET_DO/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XAY_DUNG_LOP_MTHCN/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/XAY_DUNG_LOP_MTHCN/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,22 +46,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.Funny.html.executor": "Run",
-    "JavaScript Debug.XDHT.html.executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.Funny.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.XDHT.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Desktop\Code Gym\Module 1\LAP_TRINH_HDT\Xay_Dung_Lop_Date" />
@@ -84,6 +84,7 @@
       <updated>1729561209167</updated>
       <workItem from="1729561210258" duration="2026000" />
       <workItem from="1729571676986" duration="735000" />
+      <workItem from="1729579223717" duration="300000" />
     </task>
     <servers />
   </component>

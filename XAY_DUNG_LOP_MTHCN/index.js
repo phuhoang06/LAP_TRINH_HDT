@@ -1,5 +1,5 @@
 
-    class Rectangle {
+    class Rectanglea{
     constructor(width, height) {
     // Kiểm tra giá trị hợp lệ
     this.setWidth(width);
