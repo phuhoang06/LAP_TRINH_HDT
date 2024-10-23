@@ -1,69 +1,71 @@
-function Mobile() {
-    this.battery = 100;
-    this.sentMess = [];
-    this.receivedMess = [];
-    this.currentMess = '';
-    this.isOn = false;
-    this.checkBattery = function () {
+class Mobile {
+    constructor() {
+        this.battery = 100;
+        this.sentMessages = [];
+        this.receivedMessages = [];
+        this.currentMessage = '';
+        this.isOn = false;
+    }
+
+    checkBattery() {
         if (this.battery > 0 && this.isOn) {
             this.battery--;
             return true;
         }
         return false;
     }
-    this.turnOn = function () {
-        this.isOn = !this.isOn;
-    }
-    this.charging = function () {
-        this.battery += 1;
 
-    }
-    this.composingMess = function (message) {
-        this.currentMess = message;
-    }
-    this.receivingMess = function (message) {
-        if (this.checkBattery()) {
-            this.receivedMess.push(message);
-            return true;
-        }
-        return false;
-    }
-    this.sendingMess = function (phone) {
-        if (this.checkBattery())
-            if (phone.receivingMess(this.currentMess)) {
-                this.sentMess.push(this.currentMess);
-                this.currentMess = '';
-            }
-    }
-    this.seenReceiveMess = function () {
-        if (!this.checkBattery()) {
-            return '';
-        }
-        let s = " Received Message List      <br>";
-        for (let i = 0; i < this.receivedMess.length; i++) {
-            s += `Message ${i}: ${this.receivedMess[i]} <br>`
-        }
-        return s;
+    turnOn() {
+        this.isOn = true;
     }
 
+    turnOff() {
+        this.isOn = false;
+    }
 
-    this.seenSendMess = function () {
-        if (!this.checkBattery()) {
-            return '';
+    charge() {
+        if (this.battery < 100) {
+            this.battery += 1;
         }
-        let s = "=== Sent Message List === <br>";
-        for (let i = 0; i < this.sentMess.length; i++) {
-            s += `Message ${i}: ${this.sentMess[i]} <br>`;
+    }
+
+    composeMessage(message) {
+        this.currentMessage = message;
+    }
+
+    receiveMessage(message) {
+        if (!this.checkBattery()) return false;
+
+        this.receivedMessages.push(message);
+        return true;
+    }
+
+    sendMessage(phone) {
+        if (!this.checkBattery()) return false;
+
+        if (phone.receiveMessage(this.currentMessage)) {
+            this.sentMessages.push(this.currentMessage);
+            this.currentMessage = '';
         }
-        return s;
+    }
+
+    getReceivedMessages() {
+        if (!this.checkBattery()) return '';
+
+        return "Received Message List:<br>" + this.receivedMessages.map((msg, i) => `Message ${i}: ${msg} <br>`).join('');
+    }
+
+    getSentMessages() {
+        if (!this.checkBattery()) return '';
+
+        return "Sent Message List:<br>" + this.sentMessages.map((msg, i) => `Message ${i}: ${msg} <br>`).join('');
     }
 }
-let nokia = new Mobile();
-let iphone = new Mobile();
+
+const nokia = new Mobile();
+const iphone = new Mobile();
 nokia.turnOn();
 iphone.turnOn();
-nokia.composingMess('Hello');
-nokia.sendingMess(iphone);
-document.getElementById("result").innerHTML = iphone.seenReceiveMess();
-
-
+nokia.composeMessage('Hello');
+nokia.sendMessage(iphone);
+document.getElementById("result").innerHTML = iphone.getReceivedMessages();
