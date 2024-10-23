@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="603983c1-5bfe-4784-8097-0eb2b3008db1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lai_xe/Lai_Xe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lai_xe/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/den_pin/battery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/den_pin/cilent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/den_pin/flash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/den_pin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DIEN_THOAI/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/DIEN_THOAI/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +87,7 @@
       <workItem from="1729571676986" duration="735000" />
       <workItem from="1729579223717" duration="9740000" />
       <workItem from="1729646380308" duration="1876000" />
-      <workItem from="1729665213879" duration="2835000" />
+      <workItem from="1729665213879" duration="4725000" />
     </task>
     <servers />
   </component>
