@@ -1,6 +1,7 @@
 let adam = new Human("adam",1,66)
 let eva = new Human("Eva", 2,49)
-let apple_1 = new apple(10)
+let apple_1
+    = new apple(10)
 while (apple_1.isEmpty() !== true) {
     document.write("Adam ăn táo" + "<br>");
     adam.eat(apple_1);
